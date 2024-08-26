@@ -1,0 +1,27 @@
+#root {
+}
+
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .masonry-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .masonry-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .span-2-cols {
+    grid-column: span 2;
+  }
+  
+  .span-2-rows {
+    grid-row: span 2;
+  }
