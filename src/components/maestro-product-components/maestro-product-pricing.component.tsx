@@ -106,7 +106,7 @@ const MaestroPricing: React.FC = () => {
   to="https://calendly.com/louiscollinsjr/atem-intro" // Adjust this path to the correct route in your app
   title="Schedule a call with atem"
   className="inline-flex items-center justify-center px-4 py-3 my-12 font-semibold text-white bg-black transition-all duration-200 border border-transparent rounded-xl border-gray-700 hover:bg-slate-50 hover:text-black focus:text-black focus:bg-white"
-  activeClassName="bg-slate-50 text-black" // Optional: Styles for active link
+   
 >
   Get Started
 </NavLink>
@@ -116,7 +116,7 @@ const MaestroPricing: React.FC = () => {
               <p className="font-bold text-md my-4">What's included:</p>
 
               <ul className="flex flex-col mt-8 space-y-4">
-                {pricing.basic.items.map((item, index) => (
+                {pricing.basic.items.map((item) => (
                   <li className="inline-flex items-center space-x-2">
                     <svg
                       className="flex-shrink-0 w-5 h-5 text-gray-400"
@@ -187,7 +187,7 @@ const MaestroPricing: React.FC = () => {
 
               <p className="font-bold text-md my-4">What's included:</p>
               <ul className="flex flex-col mt-8 space-y-4">
-              {pricing.professional.items.map((item, index) => (
+              {pricing.professional.items.map((item) => (
                   <li className="inline-flex items-center space-x-2">
                     <svg
                       className="flex-shrink-0 w-5 h-5 text-gray-400"

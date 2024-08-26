@@ -8,7 +8,7 @@ import Image05 from '../../assets/feature-image-05.jpg';
 
 const MasonaryGridCTA: React.FC = () => {
   return (
-    <section className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-16 md:py-48 my-2 px-6 lg:px-0 border-t-4" tabIndex="-1" >
+    <section className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-16 md:py-48 my-2 px-6 lg:px-0 border-t-4" tabIndex={-1} >
       <div className="max-w-screen-2xl">
         <p className="text-lg tracking-wide text-black font-bold uppercase">
           Your extra set of hands

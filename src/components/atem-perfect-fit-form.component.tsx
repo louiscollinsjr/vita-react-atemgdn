@@ -3,7 +3,7 @@ import React from "react";
 
 const AtemPerfectFitForm: React.FC = () => {
   return (
-    <section id="contact-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-24 my-2 px-10" tabIndex="-1">
+    <section id="contact-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-24 my-2 px-10" tabIndex={-1}>
       <div className="max-w-screen-2xl">
         <p className="~text-base/lg tracking-wide text-black font-bold uppercase">
           Earning trust one client at a time

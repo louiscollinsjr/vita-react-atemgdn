@@ -30,7 +30,7 @@ const MaestroProductButtonList: React.FC = () => {
                 Simplify Automation.
               </p>
             <div className="max-w-4xl flex pb-3 mt-12 items-center justify-center">
-              <BuildButtonList buttons={buttonLabels} className="items-center" />
+              <BuildButtonList buttons={buttonLabels} />
             </div>
             </div>
             <p className="justify-center pt-20">

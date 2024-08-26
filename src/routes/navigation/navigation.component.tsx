@@ -22,12 +22,6 @@ const Navigation: React.FC = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
 
-  const handleContactScroll = () => {
-    const section = document.getElementById('contact-hash');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <Fragment>

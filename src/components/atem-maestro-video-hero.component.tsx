@@ -6,7 +6,7 @@ import atemMaestroWBEM from '../assets/atem-maestro.webm';
 
 const AtemMaestroVideoHero: React.FC = () => {
     const [scrollY, setScrollY] = useState(0);
-    const videoRef = useRef(null);
+    const videoRef = useRef<HTMLVideoElement | null>(null);
     const [isPlaying, setIsPlaying] = useState(true);
     //const [borderRadiusScroll, setBorderRadiusScroll] = useState(0); // Default radius
     const [borderRadiusResize, setBorderRadiusResize] = useState(0); // Default radius

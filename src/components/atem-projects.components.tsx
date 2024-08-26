@@ -2,10 +2,19 @@ import React from 'react';
 import { useQuery, gql } from '@apollo/client';
 import { truncateText } from '../utils/utils';
 
-
-
-import BigCookiePNG from '../assets/a_happy_woman_holding_cookie.png';
-import SatchelPeopleWalking from '../assets/people_walking_around_the_city_shopping.png';
+// Define the Post type based on the structure of the posts
+interface Post {
+  title: string;
+  subtitle?: string; // Optional subtitle
+  content: {
+    text: string;
+  };
+  slug: string;
+  coverImage: {
+    url: string;
+    fileName: string;
+  };
+}
 
 
 const GET_ATEMPROJECTS_ITEMS = gql`
@@ -60,7 +69,7 @@ const AtemProjects: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {data.posts.map((post) => (
+      {data.posts.map((post: Post) => (
 
       <div className="py-4">
         <div>
